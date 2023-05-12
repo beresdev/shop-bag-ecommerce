@@ -1,9 +1,17 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    --jade: #36B6AE;
+    --naranja: #DC9545;
+    --lila: #BA93E9;
+    --gris: #5F6974;
+    --gris-claro: #798897;
+    --rojo: #DB0E3F;
+    --blanco: #FFFFFF;
+    --black: #0f0f0f;
 }
