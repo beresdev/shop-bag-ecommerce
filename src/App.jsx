@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react"
+import { ProductsList } from "./components/ProductsList";
+import { ProductCard } from "./components/ProductCard";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -13,7 +15,19 @@ function App() {
   //console.log(productsCopy)
   return (
     <>
-    <h1>¡Hola mundo!</h1>
+      <h1>¡Hola mundo!</h1>
+      <ProductsList>
+        {
+          productsCopy.map(product => (
+            <ProductCard
+              key={product.id}
+              title={product.title}
+              img={product.images[0]}
+              price={product.price}
+            />
+          ))
+        }
+      </ProductsList>
     </>
   )
 }
