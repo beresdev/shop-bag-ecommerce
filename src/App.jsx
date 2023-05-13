@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import Layout from './Components/Layout'
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -13,7 +14,8 @@ function App() {
   //console.log(productsCopy)
   return (
     <>
-    <h1>¡Hola mundo!</h1>
+      <Layout><h1>¡Hola mundo!</h1></Layout>
+    
     </>
   )
 }
